@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.rmmc.studenttaskhub.ui.dashboard.DashboardFragment"
+        android:label="@string/dashboard" />
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.rmmc.studenttaskhub.ui.tasks.TaskListFragment"
+        android:label="@string/tasks" />
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.rmmc.studenttaskhub.ui.schedule.ScheduleFragment"
+        android:label="@string/schedules" />
+
+</navigation>

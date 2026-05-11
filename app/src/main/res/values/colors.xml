@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#00695C</color>
+    <color name="brand_secondary">#00A889</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+
+    <color name="surface_background">#F2F8F7</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="card_stroke">#D8E7E4</color>
+
+    <color name="text_primary">#132321</color>
+    <color name="text_secondary">#4A6360</color>
+
+    <color name="task_pending">#E65100</color>
+    <color name="task_done">#2E7D32</color>
+
+    <color name="bottom_nav_active">#00695C</color>
+    <color name="bottom_nav_inactive">#73928C</color>
+</resources>

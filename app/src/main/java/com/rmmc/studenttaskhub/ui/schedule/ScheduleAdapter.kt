@@ -1,0 +1,48 @@
+package com.rmmc.studenttaskhub.ui.schedule
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+import com.rmmc.studenttaskhub.data.model.Schedule
+import com.rmmc.studenttaskhub.databinding.ItemScheduleBinding
+import com.rmmc.studenttaskhub.ui.common.DateTimeUtils
+
+class ScheduleAdapter(
+    private val onEdit: (Schedule) -> Unit,
+    private val onDelete: (Schedule) -> Unit
+) : ListAdapter<Schedule, ScheduleAdapter.ScheduleViewHolder>(Diff) {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ScheduleViewHolder {
+        val binding = ItemScheduleBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ScheduleViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: ScheduleViewHolder, position: Int) {
+        holder.bind(getItem(position))
+    }
+
+    inner class ScheduleViewHolder(private val binding: ItemScheduleBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(item: Schedule) {
+            binding.scheduleSubject.text = item.subject
+            binding.scheduleInstructor.text = item.instructor
+            binding.scheduleRoom.text = item.room
+            binding.scheduleDay.text = item.day.name
+            binding.scheduleTime.text = binding.root.context.getString(
+                com.rmmc.studenttaskhub.R.string.schedule_time_range,
+                DateTimeUtils.formatTime(item.startTimeMillis),
+                DateTimeUtils.formatTime(item.endTimeMillis)
+            )
+
+            binding.editScheduleButton.setOnClickListener { onEdit(item) }
+            binding.deleteScheduleButton.setOnClickListener { onDelete(item) }
+        }
+    }
+
+    private object Diff : DiffUtil.ItemCallback<Schedule>() {
+        override fun areItemsTheSame(oldItem: Schedule, newItem: Schedule): Boolean = oldItem.id == newItem.id
+
+        override fun areContentsTheSame(oldItem: Schedule, newItem: Schedule): Boolean = oldItem == newItem
+    }
+}

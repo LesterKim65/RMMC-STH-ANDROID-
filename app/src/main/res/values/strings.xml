@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RMMC Student Task Hub</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="tasks">Tasks</string>
+    <string name="schedules">Schedules</string>
+
+    <string name="dashboard_title">Student Task Hub</string>
+    <string name="dashboard_subtitle">Your academic productivity at a glance</string>
+    <string name="today_tasks">Today\'s Tasks</string>
+    <string name="next_deadline">Next Deadline</string>
+    <string name="no_upcoming_tasks">No upcoming tasks</string>
+
+    <string name="total_tasks">Total Tasks</string>
+    <string name="completed_tasks">Completed</string>
+    <string name="pending_tasks">Pending</string>
+    <string name="add_task">Add Task</string>
+    <string name="view_schedule">View Schedule</string>
+
+    <string name="search_tasks">Search tasks</string>
+    <string name="filter_status">Status</string>
+    <string name="filter_priority">Priority</string>
+    <string name="sort_by">Sort</string>
+    <string name="done">Done</string>
+
+    <string name="task_title">Task Title</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="description">Description</string>
+    <string name="deadline">Deadline</string>
+    <string name="priority">Priority</string>
+    <string name="status">Status</string>
+
+    <string name="add_schedule">Add Schedule</string>
+    <string name="edit_schedule">Edit Schedule</string>
+    <string name="subject">Subject</string>
+    <string name="instructor">Instructor</string>
+    <string name="room">Room</string>
+    <string name="day">Day</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+
+    <string name="schedule_time_range">%1$s - %2$s</string>
+
+    <string name="edit_task">Edit Task</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <string name="notification_channel_name">Task Hub Reminders</string>
+    <string name="notification_channel_description">Reminder alerts for classes and deadlines</string>
+    <string name="task_reminder_title">Deadline Reminder</string>
+    <string name="task_reminder_message">%1$s is approaching soon.</string>
+    <string name="class_reminder_title">Class Reminder</string>
+    <string name="class_reminder_message">%1$s starts in 30 minutes. Room: %2$s</string>
+</resources>
