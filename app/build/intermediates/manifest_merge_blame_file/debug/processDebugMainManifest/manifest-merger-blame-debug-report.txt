@@ -1,0 +1,182 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rmmc.studenttaskhub"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+11-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:4:5-81
+11-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:4:22-78
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:5:5-77
+12-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:5:22-74
+13    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+13-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:6:5-79
+13-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:6:22-76
+14
+15    <permission
+15-->[androidx.core:core:1.13.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5c133a4da03e28bfa80d8b0097aefda6\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+16        android:name="com.rmmc.studenttaskhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.13.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5c133a4da03e28bfa80d8b0097aefda6\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.13.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5c133a4da03e28bfa80d8b0097aefda6\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.rmmc.studenttaskhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.13.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5c133a4da03e28bfa80d8b0097aefda6\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.13.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5c133a4da03e28bfa80d8b0097aefda6\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:8:5-38:19
+22        android:name="com.rmmc.studenttaskhub.StudentTaskHubApp"
+22-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:9:9-42
+23        android:allowBackup="true"
+23-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:10:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.13.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5c133a4da03e28bfa80d8b0097aefda6\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:icon="@drawable/ic_notification"
+27-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:11:9-49
+28        android:label="@string/app_name"
+28-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:12:9-41
+29        android:roundIcon="@drawable/ic_notification"
+29-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:13:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:14:9-35
+31        android:testOnly="true"
+32        android:theme="@style/Theme.RMMCStudentTaskHub" >
+32-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:15:9-56
+33        <activity
+33-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:17:9-24:20
+34            android:name="com.rmmc.studenttaskhub.ui.MainActivity"
+34-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:18:13-44
+35            android:exported="true" >
+35-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:19:13-36
+36            <intent-filter>
+36-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:20:13-23:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:21:17-69
+37-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:21:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:22:17-77
+39-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:22:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <receiver
+43-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:26:9-28:40
+44            android:name="com.rmmc.studenttaskhub.notifications.ReminderReceiver"
+44-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:27:13-59
+45            android:exported="false" />
+45-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:28:13-37
+46        <receiver
+46-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:30:9-37:20
+47            android:name="com.rmmc.studenttaskhub.notifications.BootReceiver"
+47-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:31:13-55
+48            android:enabled="true"
+48-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:32:13-35
+49            android:exported="true" >
+49-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:33:13-36
+50            <intent-filter>
+50-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:34:13-36:29
+51                <action android:name="android.intent.action.BOOT_COMPLETED" />
+51-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:35:17-79
+51-->C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\AndroidManifest.xml:35:25-76
+52            </intent-filter>
+53        </receiver>
+54
+55        <provider
+55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\92e126e51c8346a7920d2ad3c7bb481d\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+56            android:name="androidx.startup.InitializationProvider"
+56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\92e126e51c8346a7920d2ad3c7bb481d\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+57            android:authorities="com.rmmc.studenttaskhub.androidx-startup"
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\92e126e51c8346a7920d2ad3c7bb481d\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+58            android:exported="false" >
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\92e126e51c8346a7920d2ad3c7bb481d\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+59            <meta-data
+59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\92e126e51c8346a7920d2ad3c7bb481d\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\92e126e51c8346a7920d2ad3c7bb481d\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+61                android:value="androidx.startup" />
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\92e126e51c8346a7920d2ad3c7bb481d\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+62            <meta-data
+62-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\9d9b4d7ae2d02225316373d526d0f012\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\9d9b4d7ae2d02225316373d526d0f012\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
+64                android:value="androidx.startup" />
+64-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\9d9b4d7ae2d02225316373d526d0f012\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+67                android:value="androidx.startup" />
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+68        </provider>
+69
+70        <uses-library
+70-->[androidx.window:window:1.0.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\da11d74b4e803f56a3542771c2351e71\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+71            android:name="androidx.window.extensions"
+71-->[androidx.window:window:1.0.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\da11d74b4e803f56a3542771c2351e71\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+72            android:required="false" />
+72-->[androidx.window:window:1.0.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\da11d74b4e803f56a3542771c2351e71\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+73        <uses-library
+73-->[androidx.window:window:1.0.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\da11d74b4e803f56a3542771c2351e71\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+74            android:name="androidx.window.sidecar"
+74-->[androidx.window:window:1.0.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\da11d74b4e803f56a3542771c2351e71\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+75            android:required="false" />
+75-->[androidx.window:window:1.0.0] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\da11d74b4e803f56a3542771c2351e71\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+76
+77        <service
+77-->[androidx.room:room-runtime:2.6.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\23a263434be0e588200896fe59263739\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+78            android:name="androidx.room.MultiInstanceInvalidationService"
+78-->[androidx.room:room-runtime:2.6.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\23a263434be0e588200896fe59263739\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+79            android:directBootAware="true"
+79-->[androidx.room:room-runtime:2.6.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\23a263434be0e588200896fe59263739\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+80            android:exported="false" />
+80-->[androidx.room:room-runtime:2.6.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\23a263434be0e588200896fe59263739\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+81
+82        <receiver
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+83            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+84            android:directBootAware="false"
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+85            android:enabled="true"
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+86            android:exported="true"
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+87            android:permission="android.permission.DUMP" >
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+89                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+92                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+95                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+98                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+99            </intent-filter>
+100        </receiver>
+101    </application>
+102
+103</manifest>
