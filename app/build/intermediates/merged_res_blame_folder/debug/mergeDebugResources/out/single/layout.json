@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/fragment_dashboard.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/item_schedule.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/item_schedule.xml"
+    },
+    {
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/dialog_schedule_edit.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/dialog_schedule_edit.xml"
+    },
+    {
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/dialog_task_edit.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/dialog_task_edit.xml"
+    },
+    {
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/fragment_schedule.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/fragment_schedule.xml"
+    },
+    {
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/activity_main.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/fragment_task_list.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/fragment_task_list.xml"
+    },
+    {
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/item_task.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/item_task.xml"
+    }
+]
