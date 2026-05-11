@@ -1,0 +1,55 @@
+com.rmmc.studenttaskhub.app-customview-poolingcontainer-1.0.0-0 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\09de9ed52282a1a632e071a35d0d8594\transformed\customview-poolingcontainer-1.0.0\res
+com.rmmc.studenttaskhub.app-lifecycle-livedata-2.8.4-1 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\10d3f3ac23b63b01995d461d29bfaf99\transformed\lifecycle-livedata-2.8.4\res
+com.rmmc.studenttaskhub.app-cardview-1.0.0-2 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\1403bf92231e7998b84b4d7f4a72f1e0\transformed\cardview-1.0.0\res
+com.rmmc.studenttaskhub.app-profileinstaller-1.3.1-3 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\15f6f9998bf06803357a9a846d4cad68\transformed\profileinstaller-1.3.1\res
+com.rmmc.studenttaskhub.app-room-runtime-2.6.1-4 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\23a263434be0e588200896fe59263739\transformed\room-runtime-2.6.1\res
+com.rmmc.studenttaskhub.app-lifecycle-livedata-core-2.8.4-5 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\3236e90cfb0ed9b01d0a84703bc0c832\transformed\lifecycle-livedata-core-2.8.4\res
+com.rmmc.studenttaskhub.app-drawerlayout-1.1.1-6 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\39d74155b23f170fc9f59817e05c9375\transformed\drawerlayout-1.1.1\res
+com.rmmc.studenttaskhub.app-startup-runtime-1.1.1-7 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\3a323527d9b9d2ecebfcc35e840ee1d6\transformed\startup-runtime-1.1.1\res
+com.rmmc.studenttaskhub.app-navigation-fragment-2.5.3-8 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\3c6f8328ef5b430f3860acb557d73df4\transformed\navigation-fragment-2.5.3\res
+com.rmmc.studenttaskhub.app-navigation-runtime-2.5.3-9 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\440268277b125bfd4ff9f555ff443bcd\transformed\navigation-runtime-2.5.3\res
+com.rmmc.studenttaskhub.app-lifecycle-runtime-ktx-release-10 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\465a44bcc58dc1a36aabca254272aee4\transformed\lifecycle-runtime-ktx-release\res
+com.rmmc.studenttaskhub.app-activity-ktx-1.8.0-11 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\4741876152c7f967767ceb273b8a8a53\transformed\activity-ktx-1.8.0\res
+com.rmmc.studenttaskhub.app-appcompat-resources-1.7.0-12 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\4db7d08e7c495252187bd6fd227b8051\transformed\appcompat-resources-1.7.0\res
+com.rmmc.studenttaskhub.app-sqlite-framework-2.4.0-13 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\51dbadbb5e46a4b515764ded7e0a99c3\transformed\sqlite-framework-2.4.0\res
+com.rmmc.studenttaskhub.app-navigation-runtime-ktx-2.5.3-14 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\591923debcc9f28e6bec3168d07eb74f\transformed\navigation-runtime-ktx-2.5.3\res
+com.rmmc.studenttaskhub.app-lifecycle-viewmodel-ktx-2.8.4-15 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5bcc8a0869c00958dee208ec77d421f5\transformed\lifecycle-viewmodel-ktx-2.8.4\res
+com.rmmc.studenttaskhub.app-core-1.13.1-16 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5c133a4da03e28bfa80d8b0097aefda6\transformed\core-1.13.1\res
+com.rmmc.studenttaskhub.app-recyclerview-1.3.2-17 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5e94f399c0fd4d554c2a662bc27de0f3\transformed\recyclerview-1.3.2\res
+com.rmmc.studenttaskhub.app-viewpager2-1.1.0-beta02-18 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\5f662280f385a18be22bda804063d016\transformed\viewpager2-1.1.0-beta02\res
+com.rmmc.studenttaskhub.app-savedstate-1.2.1-19 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\60ba7b6ccbb7753b38940c3f931a7db7\transformed\savedstate-1.2.1\res
+com.rmmc.studenttaskhub.app-material-1.12.0-20 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\61a50d087ea723442de7783faa0a1ca7\transformed\material-1.12.0\res
+com.rmmc.studenttaskhub.app-navigation-ui-ktx-2.5.3-21 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\7216cf0427eee65da0342bd8247b2928\transformed\navigation-ui-ktx-2.5.3\res
+com.rmmc.studenttaskhub.app-slidingpanelayout-1.2.0-22 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\775d341dbfdd91e988268e422a28554a\transformed\slidingpanelayout-1.2.0\res
+com.rmmc.studenttaskhub.app-appcompat-1.7.0-23 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\84b180479588d0056e9ca0bb8e47f4cd\transformed\appcompat-1.7.0\res
+com.rmmc.studenttaskhub.app-annotation-experimental-1.4.0-24 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\885aebda137fc30dd090239dbd4f746f\transformed\annotation-experimental-1.4.0\res
+com.rmmc.studenttaskhub.app-savedstate-ktx-1.2.1-25 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\901aec13031b1340c1707ce8bbe513f0\transformed\savedstate-ktx-1.2.1\res
+com.rmmc.studenttaskhub.app-emoji2-1.3.0-26 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\92e126e51c8346a7920d2ad3c7bb481d\transformed\emoji2-1.3.0\res
+com.rmmc.studenttaskhub.app-lifecycle-livedata-core-ktx-2.8.4-27 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\94ccd4e90565a72b780f793b0e5301a7\transformed\lifecycle-livedata-core-ktx-2.8.4\res
+com.rmmc.studenttaskhub.app-navigation-fragment-ktx-2.5.3-28 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\94dca89e039964c2512546c9b9c09cc9\transformed\navigation-fragment-ktx-2.5.3\res
+com.rmmc.studenttaskhub.app-lifecycle-livedata-ktx-2.8.4-29 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\9bdec40ee1db9847f8b48e30120d7a7e\transformed\lifecycle-livedata-ktx-2.8.4\res
+com.rmmc.studenttaskhub.app-lifecycle-process-2.8.4-30 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\9d9b4d7ae2d02225316373d526d0f012\transformed\lifecycle-process-2.8.4\res
+com.rmmc.studenttaskhub.app-lifecycle-runtime-release-31 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\a0213d46c30009d10b4a84db93a9594d\transformed\lifecycle-runtime-release\res
+com.rmmc.studenttaskhub.app-emoji2-views-helper-1.3.0-32 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\a43ccf1dd4dc0cf6bb094deebaf6086a\transformed\emoji2-views-helper-1.3.0\res
+com.rmmc.studenttaskhub.app-fragment-1.5.4-33 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\a88bd59602b7c3e03cc7d2e36d0b17a9\transformed\fragment-1.5.4\res
+com.rmmc.studenttaskhub.app-constraintlayout-2.1.4-34 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\a8cb882c19b3cc886b3196f093f423c9\transformed\constraintlayout-2.1.4\res
+com.rmmc.studenttaskhub.app-transition-1.5.0-35 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\ac0210dc2465daf1fb463e093b88334c\transformed\transition-1.5.0\res
+com.rmmc.studenttaskhub.app-sqlite-2.4.0-36 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\ae44ccfc94c6d3bcb6cf368d851428d4\transformed\sqlite-2.4.0\res
+com.rmmc.studenttaskhub.app-activity-1.8.0-37 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\af3b7827f3aa84bbb82f6c99249a7100\transformed\activity-1.8.0\res
+com.rmmc.studenttaskhub.app-coordinatorlayout-1.1.0-38 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\b0e8e5fc4eed738d73bbf564f5412138\transformed\coordinatorlayout-1.1.0\res
+com.rmmc.studenttaskhub.app-navigation-common-2.5.3-39 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\b52cb5c4be4a45fd1d6a29b788827206\transformed\navigation-common-2.5.3\res
+com.rmmc.studenttaskhub.app-room-ktx-2.6.1-40 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\cb278374132f4b0e12e777c0b032509e\transformed\room-ktx-2.6.1\res
+com.rmmc.studenttaskhub.app-navigation-common-ktx-2.5.3-41 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\d2294f4dccbaa8d727bb0c35ed5a9a70\transformed\navigation-common-ktx-2.5.3\res
+com.rmmc.studenttaskhub.app-window-1.0.0-42 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\da11d74b4e803f56a3542771c2351e71\transformed\window-1.0.0\res
+com.rmmc.studenttaskhub.app-core-runtime-2.2.0-43 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\daedcd4637888aa0cc029c72abade05c\transformed\core-runtime-2.2.0\res
+com.rmmc.studenttaskhub.app-lifecycle-viewmodel-savedstate-2.8.4-44 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\df87f1cf04f796f05b8ec45e54133ce8\transformed\lifecycle-viewmodel-savedstate-2.8.4\res
+com.rmmc.studenttaskhub.app-lifecycle-viewmodel-release-45 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\e35587f3284abf7b14a6af9ca23936c4\transformed\lifecycle-viewmodel-release\res
+com.rmmc.studenttaskhub.app-fragment-ktx-1.5.4-46 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\f51b942bfb4b4f6f498a9f1794bbcc3a\transformed\fragment-ktx-1.5.4\res
+com.rmmc.studenttaskhub.app-core-ktx-1.13.1-47 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\fa3d9dd956791966230a2b9288565e5b\transformed\core-ktx-1.13.1\res
+com.rmmc.studenttaskhub.app-navigation-ui-2.5.3-48 C:\Users\Lester kim C. Loon\.gradle\caches\9.0-milestone-1\transforms\fb5f4693617fd48ab2953a21ff651abc\transformed\navigation-ui-2.5.3\res
+com.rmmc.studenttaskhub.app-resValues-49 C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\build\generated\res\resValues\debug
+com.rmmc.studenttaskhub.app-packageDebugResources-50 C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.rmmc.studenttaskhub.app-packageDebugResources-51 C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.rmmc.studenttaskhub.app-debug-52 C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.rmmc.studenttaskhub.app-debug-53 C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\debug\res
+com.rmmc.studenttaskhub.app-main-54 C:\Users\Lester kim C. Loon\AndroidStudioProjects\RMMC Student Task Hub\app\src\main\res
