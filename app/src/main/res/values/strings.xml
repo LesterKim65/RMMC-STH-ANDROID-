@@ -54,4 +54,5 @@
     <string name="class_reminder_title">Class Reminder</string>
     <string name="class_reminder_message">%1$s starts in 30 minutes. Room: %2$s</string>
     <string name="exact_alarm_permission_needed">Please enable exact alarm permission to receive notifications on time.</string>
+    <string name="toggle_theme">Toggle light/dark mode</string>
 </resources>

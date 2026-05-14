@@ -4,12 +4,14 @@ package com.rmmc.studenttaskhub.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.rmmc.studenttaskhub.R;
 import java.lang.NullPointerException;
@@ -18,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final CoordinatorLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final BottomNavigationView bottomNav;
@@ -26,16 +28,25 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final FragmentContainerView fragmentContainer;
 
-  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull BottomNavigationView bottomNav, @NonNull FragmentContainerView fragmentContainer) {
+  @NonNull
+  public final ImageButton themeToggleButton;
+
+  @NonNull
+  public final MaterialToolbar toolbar;
+
+  private ActivityMainBinding(@NonNull LinearLayout rootView,
+      @NonNull BottomNavigationView bottomNav, @NonNull FragmentContainerView fragmentContainer,
+      @NonNull ImageButton themeToggleButton, @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
     this.fragmentContainer = fragmentContainer;
+    this.themeToggleButton = themeToggleButton;
+    this.toolbar = toolbar;
   }
 
   @Override
   @NonNull
-  public CoordinatorLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -72,7 +83,20 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, bottomNav, fragmentContainer);
+      id = R.id.themeToggleButton;
+      ImageButton themeToggleButton = ViewBindings.findChildViewById(rootView, id);
+      if (themeToggleButton == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((LinearLayout) rootView, bottomNav, fragmentContainer,
+          themeToggleButton, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -15,12 +15,15 @@ color text_primary
 color text_secondary
 drawable ic_add
 drawable ic_calendar
+drawable ic_dark_mode
 drawable ic_dashboard
 drawable ic_delete
 drawable ic_edit
+drawable ic_light_mode
 drawable ic_notification
 drawable ic_schedule
 drawable ic_task
+drawable ic_theme_toggle
 id addScheduleFab
 id addTaskFab
 id bottom_nav
@@ -63,6 +66,8 @@ id taskSubjectInput
 id taskTitle
 id taskTitleInput
 id tasksFragment
+id themeToggleButton
+id toolbar
 layout activity_main
 layout dialog_schedule_edit
 layout dialog_task_edit
@@ -116,6 +121,7 @@ string task_reminder_title
 string task_title
 string tasks
 string today_tasks
+string toggle_theme
 string total_tasks
 string view_schedule
 style Theme.RMMCStudentTaskHub

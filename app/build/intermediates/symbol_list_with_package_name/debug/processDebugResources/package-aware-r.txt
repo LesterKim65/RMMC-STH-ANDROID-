@@ -3764,12 +3764,14 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_dark_mode
 drawable ic_dashboard
 drawable ic_delete
 drawable ic_edit
 drawable ic_expand_less_22px
 drawable ic_expand_more_22px
 drawable ic_keyboard_black_24dp
+drawable ic_light_mode
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3782,6 +3784,7 @@ drawable ic_notification
 drawable ic_schedule
 drawable ic_search_black_24
 drawable ic_task
+drawable ic_theme_toggle
 drawable m3_action_bar_item_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -4455,11 +4458,13 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id themeToggleButton
 id time
 id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id top_center
@@ -5023,6 +5028,7 @@ string task_title
 string tasks
 string template_percent
 string today_tasks
+string toggle_theme
 string tooltip_description
 string tooltip_label
 string total_tasks

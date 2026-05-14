@@ -3763,12 +3763,14 @@ int drawable ic_call_decline 0x7f07008d
 int drawable ic_call_decline_low 0x7f07008e
 int drawable ic_clear_black_24 0x7f07008f
 int drawable ic_clock_black_24dp 0x7f070090
+int drawable ic_dark_mode 0x7f07012a
 int drawable ic_dashboard 0x7f070091
 int drawable ic_delete 0x7f070092
 int drawable ic_edit 0x7f070093
 int drawable ic_expand_less_22px 0x7f070094
 int drawable ic_expand_more_22px 0x7f070095
 int drawable ic_keyboard_black_24dp 0x7f070096
+int drawable ic_light_mode 0x7f07012b
 int drawable ic_m3_chip_check 0x7f070097
 int drawable ic_m3_chip_checked_circle 0x7f070098
 int drawable ic_m3_chip_close 0x7f070099
@@ -3781,6 +3783,7 @@ int drawable ic_notification 0x7f07009f
 int drawable ic_schedule 0x7f0700a0
 int drawable ic_search_black_24 0x7f0700a1
 int drawable ic_task 0x7f0700a2
+int drawable ic_theme_toggle 0x7f07012c
 int drawable m3_action_bar_item_background 0x7f0700a3
 int drawable m3_avd_hide_password 0x7f0700a4
 int drawable m3_avd_show_password 0x7f0700a5
@@ -4454,11 +4457,13 @@ int id textinput_helper_text 0x7f080216
 int id textinput_placeholder 0x7f080217
 int id textinput_prefix_text 0x7f080218
 int id textinput_suffix_text 0x7f080219
+int id themeToggleButton 0x7f080248
 int id time 0x7f08021a
 int id title 0x7f08021b
 int id titleDividerNoCustom 0x7f08021c
 int id title_template 0x7f08021d
 int id toggle 0x7f08021e
+int id toolbar 0x7f080249
 int id top 0x7f08021f
 int id topPanel 0x7f080220
 int id top_center 0x7f080221
@@ -5022,6 +5027,7 @@ int string task_title 0x7f10012f
 int string tasks 0x7f100130
 int string template_percent 0x7f100131
 int string today_tasks 0x7f100132
+int string toggle_theme 0x7f100138
 int string tooltip_description 0x7f100133
 int string tooltip_label 0x7f100134
 int string total_tasks 0x7f100135
