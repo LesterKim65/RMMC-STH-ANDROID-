@@ -102,7 +102,7 @@ class TaskEditDialogFragment : DialogFragment() {
                 val statusText = binding.statusDropdown.text.toString().ifBlank { TaskStatus.PENDING.name }
                 val priority = TaskPriority.valueOf(priorityText)
                 val status = TaskStatus.valueOf(statusText)
-                val reminderMillis = selectedDeadline - 60 * 60 * 1000
+                val reminderMillis = selectedDeadline - 30 * 60 * 1000
 
                 val task = Task(
                     id = existingTask?.id ?: 0,

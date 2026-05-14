@@ -1,34 +1,46 @@
 [
     {
-        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/fragment_dashboard.xml",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/fragment_dashboard.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-mergeDebugResources-74:\\layout\\item_task.xml",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\item_task.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/item_schedule.xml",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/item_schedule.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-mergeDebugResources-74:\\layout\\fragment_task_list.xml",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\fragment_task_list.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/dialog_schedule_edit.xml",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/dialog_schedule_edit.xml"
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-74:/layout/activity_main.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-77:/layout/activity_main.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/dialog_task_edit.xml",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/dialog_task_edit.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-mergeDebugResources-74:\\layout\\fragment_schedule.xml",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\fragment_schedule.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/fragment_schedule.xml",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/fragment_schedule.xml"
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-74:/layout/fragment_schedule.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-77:/layout/fragment_schedule.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/activity_main.xml",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/activity_main.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-mergeDebugResources-74:\\layout\\dialog_task_edit.xml",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\dialog_task_edit.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/fragment_task_list.xml",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/fragment_task_list.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-mergeDebugResources-74:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-52:/layout/item_task.xml",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/item_task.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-mergeDebugResources-74:\\layout\\dialog_schedule_edit.xml",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\dialog_schedule_edit.xml"
+    },
+    {
+        "merged": "com.rmmc.studenttaskhub.app-mergeDebugResources-74:/layout/fragment_task_list.xml",
+        "source": "com.rmmc.studenttaskhub.app-main-77:/layout/fragment_task_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-mergeDebugResources-74:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-mergeDebugResources-74:\\layout\\item_schedule.xml",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\item_schedule.xml"
     }
 ]

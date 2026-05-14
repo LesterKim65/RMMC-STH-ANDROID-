@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">RMMC Student Task Hub</string>
     <string name="dashboard">Dashboard</string>
-    <string name="tasks">Tasks</string>
+    <string name="tasks">Assignments</string>
     <string name="schedules">Schedules</string>
 
     <string name="dashboard_title">Student Task Hub</string>
@@ -14,7 +14,7 @@
     <string name="total_tasks">Total Tasks</string>
     <string name="completed_tasks">Completed</string>
     <string name="pending_tasks">Pending</string>
-    <string name="add_task">Add Task</string>
+    <string name="add_task">Add Assignment</string>
     <string name="view_schedule">View Schedule</string>
 
     <string name="search_tasks">Search tasks</string>
@@ -23,7 +23,7 @@
     <string name="sort_by">Sort</string>
     <string name="done">Done</string>
 
-    <string name="task_title">Task Title</string>
+    <string name="task_title">Assignment Title</string>
     <string name="subject_name">Subject Name</string>
     <string name="description">Description</string>
     <string name="deadline">Deadline</string>
@@ -49,8 +49,9 @@
 
     <string name="notification_channel_name">Task Hub Reminders</string>
     <string name="notification_channel_description">Reminder alerts for classes and deadlines</string>
-    <string name="task_reminder_title">Deadline Reminder</string>
-    <string name="task_reminder_message">%1$s is approaching soon.</string>
+    <string name="task_reminder_title">Assignment Deadline</string>
+    <string name="task_reminder_message">%1$s deadline is reached.</string>
     <string name="class_reminder_title">Class Reminder</string>
     <string name="class_reminder_message">%1$s starts in 30 minutes. Room: %2$s</string>
+    <string name="exact_alarm_permission_needed">Please enable exact alarm permission to receive notifications on time.</string>
 </resources>

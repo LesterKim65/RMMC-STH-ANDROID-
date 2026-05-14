@@ -13,7 +13,7 @@
     <color name="text_primary">#132321</color>
     <color name="text_secondary">#4A6360</color>
     <string name="add_schedule">Add Schedule</string>
-    <string name="add_task">Add Task</string>
+    <string name="add_task">Add Assignment</string>
     <string name="app_name">RMMC Student Task Hub</string>
     <string name="cancel">Cancel</string>
     <string name="class_reminder_message">%1$s starts in 30 minutes. Room: %2$s</string>
@@ -31,6 +31,7 @@
     <string name="edit_schedule">Edit Schedule</string>
     <string name="edit_task">Edit Task</string>
     <string name="end_time">End Time</string>
+    <string name="exact_alarm_permission_needed">Please enable exact alarm permission to receive notifications on time.</string>
     <string name="filter_priority">Priority</string>
     <string name="filter_status">Status</string>
     <string name="instructor">Instructor</string>
@@ -50,10 +51,10 @@
     <string name="status">Status</string>
     <string name="subject">Subject</string>
     <string name="subject_name">Subject Name</string>
-    <string name="task_reminder_message">%1$s is approaching soon.</string>
-    <string name="task_reminder_title">Deadline Reminder</string>
-    <string name="task_title">Task Title</string>
-    <string name="tasks">Tasks</string>
+    <string name="task_reminder_message">%1$s deadline is reached.</string>
+    <string name="task_reminder_title">Assignment Deadline</string>
+    <string name="task_title">Assignment Title</string>
+    <string name="tasks">Assignments</string>
     <string name="today_tasks">Today\'s Tasks</string>
     <string name="total_tasks">Total Tasks</string>
     <string name="view_schedule">View Schedule</string>

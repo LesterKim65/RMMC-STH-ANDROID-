@@ -22,10 +22,8 @@ drawable ic_notification
 drawable ic_schedule
 drawable ic_task
 id addScheduleFab
-id addTaskButton
 id addTaskFab
 id bottom_nav
-id completedTasksValue
 id dashboardFragment
 id dayDropdown
 id deadlineInput
@@ -37,8 +35,6 @@ id endTimeInput
 id fragment_container
 id instructorInput
 id nav_graph
-id nextDeadlineValue
-id pendingTasksValue
 id priorityDropdown
 id priorityFilterDropdown
 id roomInput
@@ -67,13 +63,9 @@ id taskSubjectInput
 id taskTitle
 id taskTitleInput
 id tasksFragment
-id todayTasksValue
-id totalTasksValue
-id viewScheduleButton
 layout activity_main
 layout dialog_schedule_edit
 layout dialog_task_edit
-layout fragment_dashboard
 layout fragment_schedule
 layout fragment_task_list
 layout item_schedule
@@ -99,6 +91,7 @@ string edit
 string edit_schedule
 string edit_task
 string end_time
+string exact_alarm_permission_needed
 string filter_priority
 string filter_status
 string instructor

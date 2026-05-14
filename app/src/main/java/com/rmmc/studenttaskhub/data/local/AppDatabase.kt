@@ -11,6 +11,7 @@ import com.rmmc.studenttaskhub.data.model.Task
 @Database(entities = [Task::class, Schedule::class], version = 1, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
+
     abstract fun taskDao(): TaskDao
     abstract fun scheduleDao(): ScheduleDao
 
@@ -20,11 +21,13 @@ abstract class AppDatabase : RoomDatabase() {
 
         fun getInstance(context: Context): AppDatabase {
             return INSTANCE ?: synchronized(this) {
-                INSTANCE ?: Room.databaseBuilder(
+                val instance = Room.databaseBuilder(
                     context.applicationContext,
                     AppDatabase::class.java,
-                    "rmmc_student_task_hub.db"
-                ).build().also { INSTANCE = it }
+                    "student_task_hub_db"
+                ).build()
+                INSTANCE = instance
+                instance
             }
         }
     }

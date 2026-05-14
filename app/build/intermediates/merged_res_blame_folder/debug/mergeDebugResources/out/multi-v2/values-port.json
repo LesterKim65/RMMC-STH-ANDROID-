@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.rmmc.studenttaskhub.app-mergeDebugResources-51:/values-port/values-port.xml",
+            "outputFile": "com.rmmc.studenttaskhub.app-mergeDebugResources-73:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lester kim C. Loon\\.gradle\\caches\\9.0-milestone-1\\transforms\\84b180479588d0056e9ca0bb8e47f4cd\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\CARL\\.gradle\\caches\\9.0-milestone-1\\transforms\\9115e72191b48816a14b8a3bafe16dcd\\transformed\\appcompat-1.7.1\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

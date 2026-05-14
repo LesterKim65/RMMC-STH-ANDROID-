@@ -1,78 +1,90 @@
 [
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/layout_item_schedule.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/item_schedule.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_notification.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\drawable\\ic_notification.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/drawable_ic_task.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/drawable/ic_task.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_dashboard.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\drawable\\ic_dashboard.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/drawable_ic_add.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/drawable/ic_add.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/layout_item_task.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/item_task.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\drawable\\ic_edit.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/drawable_ic_edit.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/drawable/ic_edit.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_fragment_task_list.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\fragment_task_list.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/navigation_nav_graph.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/navigation/nav_graph.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\drawable\\ic_delete.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/drawable_ic_notification.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/drawable/ic_notification.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_calendar.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\drawable\\ic_calendar.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/layout_fragment_task_list.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/fragment_task_list.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\drawable\\ic_add.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/menu/bottom_nav_menu.xml"
+        "merged": "com.rmmc.studenttaskhub.app-debug-75:/layout_activity_main.xml.flat",
+        "source": "com.rmmc.studenttaskhub.app-main-77:/layout/activity_main.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/layout_fragment_dashboard.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/fragment_dashboard.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/layout_activity_main.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/activity_main.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_item_schedule.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\item_schedule.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/drawable_ic_delete.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/drawable/ic_delete.xml"
+        "merged": "com.rmmc.studenttaskhub.app-debug-75:/layout_fragment_schedule.xml.flat",
+        "source": "com.rmmc.studenttaskhub.app-main-77:/layout/fragment_schedule.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/drawable_ic_schedule.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/drawable/ic_schedule.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_item_task.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\item_task.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/drawable_ic_dashboard.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/drawable/ic_dashboard.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_fragment_dashboard.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\fragment_dashboard.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/layout_dialog_task_edit.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/dialog_task_edit.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_task.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\drawable\\ic_task.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/layout_fragment_schedule.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/fragment_schedule.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_dialog_schedule_edit.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\dialog_schedule_edit.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/layout_dialog_schedule_edit.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/layout/dialog_schedule_edit.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_schedule.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\drawable\\ic_schedule.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/drawable_ic_calendar.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/drawable/ic_calendar.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_fragment_schedule.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\fragment_schedule.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-53:/color_bottom_nav_color.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-55:/color/bottom_nav_color.xml"
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_dialog_task_edit.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\dialog_task_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.rmmc.studenttaskhub.app-debug-75:/layout_fragment_task_list.xml.flat",
+        "source": "com.rmmc.studenttaskhub.app-main-77:/layout/fragment_task_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\color_bottom_nav_color.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\color\\bottom_nav_color.xml"
     }
 ]
