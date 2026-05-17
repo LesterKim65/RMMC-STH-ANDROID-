@@ -24,8 +24,8 @@
         "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "com.rmmc.studenttaskhub.app-debug-75:/layout_item_schedule.xml.flat",
-        "source": "com.rmmc.studenttaskhub.app-main-77:/layout/item_schedule.xml"
+        "merged": "com.rmmc.studenttaskhub.app-debug-75:/layout_fragment_settings.xml.flat",
+        "source": "com.rmmc.studenttaskhub.app-main-77:/layout/fragment_settings.xml"
     },
     {
         "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_alarm.xml.flat",
@@ -66,6 +66,10 @@
     {
         "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_fragment_settings.xml.flat",
         "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\layout_activity_alarm.xml.flat",
+        "source": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-main-77:\\layout\\activity_alarm.xml"
     },
     {
         "merged": "C:\\Users\\CARL\\.gradle\\daemon\\9.0-milestone-1\\com.rmmc.studenttaskhub.app-debug-75:\\drawable_ic_light_mode.xml.flat",

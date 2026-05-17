@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="brand_primary">#4EDBC3</color>
-    <color name="brand_secondary">#75F3DE</color>
-    <color name="brand_on_primary">#00382F</color>
+    <!-- Dark Mode Palette: Deep Blue, Black, and Gray -->
+    <color name="brand_primary">#1A237E</color> <!-- Keep the Dark Blue from Light Mode -->
+    <color name="brand_secondary">#283593</color> <!-- Slightly lighter deep blue -->
+    <color name="brand_on_primary">#FFFFFF</color>
 
-    <color name="surface_background">#0F1716</color>
-    <color name="surface_card">#152120</color>
-    <color name="card_stroke">#2A3A38</color>
+    <!-- Surfaces (Black and Dark Gray for comfort) -->
+    <color name="surface_background">#000000</color> <!-- Pure Black background -->
+    <color name="surface_card">#121212</color> <!-- Very Dark Gray card (Material Dark standard) -->
+    <color name="card_stroke">#2C2C2C</color> <!-- Gray stroke -->
 
-    <color name="text_primary">#E7F5F2</color>
-    <color name="text_secondary">#A9C3BF</color>
+    <!-- Text (Gray tones to reduce brightness) -->
+    <color name="text_primary">#E0E0E0</color> <!-- Soft Off-White/Light Gray -->
+    <color name="text_secondary">#9E9E9E</color> <!-- Medium Gray for subtext -->
 
-    <color name="task_pending">#FFA15C</color>
-    <color name="task_done">#7BE083</color>
+    <!-- Status Colors (Muted for Dark Mode) -->
+    <color name="task_pending">#F57C00</color>
+    <color name="task_done">#388E3C</color>
 
-    <color name="bottom_nav_active">#4EDBC3</color>
-    <color name="bottom_nav_inactive">#7EA6A0</color>
+    <!-- Navigation -->
+    <color name="bottom_nav_active">#1A237E</color>
+    <color name="bottom_nav_inactive">#757575</color>
 </resources>

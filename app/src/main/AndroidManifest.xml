@@ -28,6 +28,14 @@
             android:name=".ui.MainActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ui.AlarmActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:showOnLockScreen="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RMMCStudentTaskHub.NoActionBar" />
+
         <receiver
             android:name=".notifications.ReminderReceiver"
             android:exported="false" />

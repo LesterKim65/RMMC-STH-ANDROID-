@@ -10,7 +10,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.materialswitch.MaterialSwitch;
-import com.google.android.material.slider.Slider;
 import com.rmmc.studenttaskhub.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -26,16 +25,11 @@ public final class FragmentSettingsBinding implements ViewBinding {
   @NonNull
   public final MaterialSwitch notificationSwitch;
 
-  @NonNull
-  public final Slider volumeSlider;
-
   private FragmentSettingsBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialSwitch darkModeSwitch, @NonNull MaterialSwitch notificationSwitch,
-      @NonNull Slider volumeSlider) {
+      @NonNull MaterialSwitch darkModeSwitch, @NonNull MaterialSwitch notificationSwitch) {
     this.rootView = rootView;
     this.darkModeSwitch = darkModeSwitch;
     this.notificationSwitch = notificationSwitch;
-    this.volumeSlider = volumeSlider;
   }
 
   @Override
@@ -77,14 +71,8 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.volumeSlider;
-      Slider volumeSlider = ViewBindings.findChildViewById(rootView, id);
-      if (volumeSlider == null) {
-        break missingId;
-      }
-
       return new FragmentSettingsBinding((LinearLayout) rootView, darkModeSwitch,
-          notificationSwitch, volumeSlider);
+          notificationSwitch);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

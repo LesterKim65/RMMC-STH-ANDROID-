@@ -101,6 +101,23 @@
                 android:inputType="none" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/soundInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:hint="@string/alarm_sound"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_alarm">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/soundInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
     </LinearLayout>
 
 </ScrollView>

@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.rmmc.studenttaskhub.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -36,6 +37,12 @@ public final class DialogScheduleEditBinding implements ViewBinding {
   public final TextInputEditText roomInput;
 
   @NonNull
+  public final TextInputEditText soundInput;
+
+  @NonNull
+  public final TextInputLayout soundInputLayout;
+
+  @NonNull
   public final TextInputEditText startTimeInput;
 
   @NonNull
@@ -44,7 +51,8 @@ public final class DialogScheduleEditBinding implements ViewBinding {
   private DialogScheduleEditBinding(@NonNull ScrollView rootView,
       @NonNull AutoCompleteTextView dayDropdown, @NonNull TextInputEditText endTimeInput,
       @NonNull AutoCompleteTextView frequencyDropdown, @NonNull TextInputEditText instructorInput,
-      @NonNull TextInputEditText roomInput, @NonNull TextInputEditText startTimeInput,
+      @NonNull TextInputEditText roomInput, @NonNull TextInputEditText soundInput,
+      @NonNull TextInputLayout soundInputLayout, @NonNull TextInputEditText startTimeInput,
       @NonNull TextInputEditText subjectInput) {
     this.rootView = rootView;
     this.dayDropdown = dayDropdown;
@@ -52,6 +60,8 @@ public final class DialogScheduleEditBinding implements ViewBinding {
     this.frequencyDropdown = frequencyDropdown;
     this.instructorInput = instructorInput;
     this.roomInput = roomInput;
+    this.soundInput = soundInput;
+    this.soundInputLayout = soundInputLayout;
     this.startTimeInput = startTimeInput;
     this.subjectInput = subjectInput;
   }
@@ -113,6 +123,18 @@ public final class DialogScheduleEditBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.soundInput;
+      TextInputEditText soundInput = ViewBindings.findChildViewById(rootView, id);
+      if (soundInput == null) {
+        break missingId;
+      }
+
+      id = R.id.soundInputLayout;
+      TextInputLayout soundInputLayout = ViewBindings.findChildViewById(rootView, id);
+      if (soundInputLayout == null) {
+        break missingId;
+      }
+
       id = R.id.startTimeInput;
       TextInputEditText startTimeInput = ViewBindings.findChildViewById(rootView, id);
       if (startTimeInput == null) {
@@ -126,7 +148,8 @@ public final class DialogScheduleEditBinding implements ViewBinding {
       }
 
       return new DialogScheduleEditBinding((ScrollView) rootView, dayDropdown, endTimeInput,
-          frequencyDropdown, instructorInput, roomInput, startTimeInput, subjectInput);
+          frequencyDropdown, instructorInput, roomInput, soundInput, soundInputLayout,
+          startTimeInput, subjectInput);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

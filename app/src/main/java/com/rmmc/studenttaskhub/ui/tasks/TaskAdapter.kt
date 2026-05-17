@@ -11,8 +11,8 @@ import com.rmmc.studenttaskhub.databinding.ItemTaskBinding
 import com.rmmc.studenttaskhub.ui.common.DateTimeUtils
 
 class TaskAdapter(
-    private val onEdit: (Task) -> Unit,
-    private val onDelete: (Task) -> Unit,
+    private val onEdit: ((Task) -> Unit)? = null,
+    private val onDelete: ((Task) -> Unit)? = null,
     private val onStatusChanged: (Task, Boolean) -> Unit
 ) : ListAdapter<Task, TaskAdapter.TaskViewHolder>(Diff) {
 
@@ -40,8 +40,19 @@ class TaskAdapter(
                 onStatusChanged(task, checked)
             }
 
-            binding.editTaskButton.setOnClickListener { onEdit(task) }
-            binding.deleteTaskButton.setOnClickListener { onDelete(task) }
+            if (onEdit == null) {
+                binding.editTaskButton.visibility = android.view.View.GONE
+            } else {
+                binding.editTaskButton.visibility = android.view.View.VISIBLE
+                binding.editTaskButton.setOnClickListener { onEdit.invoke(task) }
+            }
+
+            if (onDelete == null) {
+                binding.deleteTaskButton.visibility = android.view.View.GONE
+            } else {
+                binding.deleteTaskButton.visibility = android.view.View.VISIBLE
+                binding.deleteTaskButton.setOnClickListener { onDelete.invoke(task) }
+            }
         }
     }
 

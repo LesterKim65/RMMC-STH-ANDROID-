@@ -39,15 +39,15 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val scheduleAdapter = ScheduleAdapter({}, {})
+        val scheduleAdapter = ScheduleAdapter(null, null)
         binding.todayScheduleRecyclerView.apply {
             adapter = scheduleAdapter
             layoutManager = LinearLayoutManager(requireContext())
         }
 
-        val taskAdapter = TaskAdapter({}, {}, { task, isCompleted ->
+        val taskAdapter = TaskAdapter(null, null) { task, isCompleted ->
             viewModel.updateTaskStatus(task, isCompleted)
-        })
+        }
         binding.upcomingTasksRecyclerView.apply {
             adapter = taskAdapter
             layoutManager = LinearLayoutManager(requireContext())

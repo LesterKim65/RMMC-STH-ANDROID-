@@ -4002,6 +4002,9 @@ id add
 id addScheduleFab
 id addTaskFab
 id advance
+id alarmIcon
+id alarmMessage
+id alarmTitle
 id alertTitle
 id aligned
 id all
@@ -4104,6 +4107,7 @@ id disablePostScroll
 id disableScroll
 id disabled
 id disjoint
+id dismissButton
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -4400,6 +4404,8 @@ id snackbar_text
 id snap
 id snapMargins
 id sortDropdown
+id soundInput
+id soundInputLayout
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -4513,7 +4519,6 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
-id volumeSlider
 id welcomeText
 id west
 id withText
@@ -4644,6 +4649,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_alarm
 layout activity_main
 layout activity_splash
 layout custom_dialog
@@ -4773,6 +4779,7 @@ string add_schedule
 string add_task
 string alarm_frequency
 string alarm_settings
+string alarm_sound
 string alarm_volume
 string androidx_startup
 string app_name
@@ -4813,8 +4820,10 @@ string day
 string deadline
 string default_error_message
 string default_popup_window_title
+string default_sound
 string delete
 string description
+string dismiss
 string done
 string dropdown_menu
 string edit
@@ -5041,6 +5050,7 @@ string search_tasks
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string select_sound
 string selected
 string settings
 string side_sheet_accessibility_pane_title

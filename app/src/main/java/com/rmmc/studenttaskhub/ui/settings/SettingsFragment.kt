@@ -48,13 +48,6 @@ class SettingsFragment : Fragment() {
             sharedPref.edit().putBoolean("notifications_enabled", isChecked).apply()
             // In a real app, you might want to cancel/reschedule all alarms here
         }
-
-        // Volume Slider
-        val volume = sharedPref.getInt("alarm_volume", 70)
-        binding.volumeSlider.value = volume.toFloat()
-        binding.volumeSlider.addOnChangeListener { _, value, _ ->
-            sharedPref.edit().putInt("alarm_volume", value.toInt()).apply()
-        }
     }
 
     override fun onDestroyView() {

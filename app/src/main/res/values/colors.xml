@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="brand_primary">#00695C</color>
-    <color name="brand_secondary">#00A889</color>
+    <!-- Dark Blue Brand Palette (Light Mode - Muted Gray Surfaces) -->
+    <color name="brand_primary">#1A237E</color> <!-- Deep Indigo -->
+    <color name="brand_secondary">#303F9F</color>
     <color name="brand_on_primary">#FFFFFF</color>
 
-    <color name="surface_background">#F2F8F7</color>
-    <color name="surface_card">#FFFFFF</color>
-    <color name="card_stroke">#D8E7E4</color>
+    <!-- Surfaces (Gray instead of White to reduce brightness) -->
+    <color name="surface_background">#E0E0E0</color> <!-- Solid Light Gray background -->
+    <color name="surface_card">#EEEEEE</color> <!-- Slightly lighter Gray for cards -->
+    <color name="card_stroke">#BDBDBD</color> <!-- Medium Gray stroke for definition -->
 
-    <color name="text_primary">#132321</color>
-    <color name="text_secondary">#4A6360</color>
+    <!-- Text (High Contrast on Gray) -->
+    <color name="text_primary">#212121</color> <!-- Dark Charcoal -->
+    <color name="text_secondary">#616161</color> <!-- Gray for subtext -->
 
-    <color name="task_pending">#E65100</color>
+    <!-- Status Colors -->
+    <color name="task_pending">#FF8F00</color>
     <color name="task_done">#2E7D32</color>
 
-    <color name="bottom_nav_active">#00695C</color>
-    <color name="bottom_nav_inactive">#73928C</color>
+    <!-- Navigation -->
+    <color name="bottom_nav_active">#1A237E</color>
+    <color name="bottom_nav_inactive">#757575</color>
 
-    <color name="sch_color_1">#4285F4</color>
-    <color name="sch_color_2">#EA4335</color>
-    <color name="sch_color_3">#FBBC05</color>
-    <color name="sch_color_4">#34A853</color>
-    <color name="sch_color_5">#8E24AA</color>
-    <color name="sch_color_6">#00ACC1</color>
+    <!-- Schedule Bar Colors -->
+    <color name="sch_color_1">#283593</color>
+    <color name="sch_color_2">#D32F2F</color>
+    <color name="sch_color_3">#FBC02D</color>
+    <color name="sch_color_4">#388E3C</color>
+    <color name="sch_color_5">#7B1FA2</color>
+    <color name="sch_color_6">#0097A7</color>
 </resources>

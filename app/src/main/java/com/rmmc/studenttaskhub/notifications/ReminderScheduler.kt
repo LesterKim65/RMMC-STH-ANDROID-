@@ -54,7 +54,8 @@ object ReminderScheduler {
                         schedule.room
                     ),
                     type = TYPE_CLASS,
-                    entityId = schedule.id
+                    entityId = schedule.id,
+                    soundUri = schedule.alarmSound
                 )
             }
         } else {
@@ -75,7 +76,8 @@ object ReminderScheduler {
                     schedule.room
                 ),
                 type = TYPE_CLASS,
-                entityId = schedule.id
+                entityId = schedule.id,
+                soundUri = schedule.alarmSound
             )
         }
     }
@@ -95,13 +97,15 @@ object ReminderScheduler {
         title: String,
         message: String,
         type: String,
-        entityId: Int
+        entityId: Int,
+        soundUri: String? = null
     ) {
         val intent = Intent(context, ReminderReceiver::class.java).apply {
             putExtra(ReminderReceiver.EXTRA_TITLE, title)
             putExtra(ReminderReceiver.EXTRA_MESSAGE, message)
             putExtra(ReminderReceiver.EXTRA_TYPE, type)
             putExtra(ReminderReceiver.EXTRA_ENTITY_ID, entityId)
+            putExtra(ReminderReceiver.EXTRA_SOUND_URI, soundUri)
         }
 
         val pendingIntent = PendingIntent.getBroadcast(
@@ -120,19 +124,11 @@ object ReminderScheduler {
         }
 
         if (canScheduleExact) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                alarmManager.setExactAndAllowWhileIdle(
-                    AlarmManager.RTC_WAKEUP,
-                    triggerMillis,
-                    pendingIntent
-                )
-            } else {
-                alarmManager.setExact(
-                    AlarmManager.RTC_WAKEUP,
-                    triggerMillis,
-                    pendingIntent
-                )
-            }
+            alarmManager.setExactAndAllowWhileIdle(
+                AlarmManager.RTC_WAKEUP,
+                triggerMillis,
+                pendingIntent
+            )
         } else {
             alarmManager.set(
                 AlarmManager.RTC_WAKEUP,
@@ -150,13 +146,15 @@ object ReminderScheduler {
         title: String,
         message: String,
         type: String,
-        entityId: Int
+        entityId: Int,
+        soundUri: String? = null
     ) {
         val intent = Intent(context, ReminderReceiver::class.java).apply {
             putExtra(ReminderReceiver.EXTRA_TITLE, title)
             putExtra(ReminderReceiver.EXTRA_MESSAGE, message)
             putExtra(ReminderReceiver.EXTRA_TYPE, type)
             putExtra(ReminderReceiver.EXTRA_ENTITY_ID, entityId)
+            putExtra(ReminderReceiver.EXTRA_SOUND_URI, soundUri)
         }
 
         val pendingIntent = PendingIntent.getBroadcast(
@@ -167,12 +165,27 @@ object ReminderScheduler {
         )
 
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        alarmManager.setRepeating(
-            AlarmManager.RTC_WAKEUP,
-            firstTriggerMillis,
-            intervalMillis,
-            pendingIntent
-        )
+        
+        val canScheduleExact = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            alarmManager.canScheduleExactAlarms()
+        } else {
+            true
+        }
+
+        if (canScheduleExact) {
+            alarmManager.setExactAndAllowWhileIdle(
+                AlarmManager.RTC_WAKEUP,
+                firstTriggerMillis,
+                pendingIntent
+            )
+        } else {
+            alarmManager.setRepeating(
+                AlarmManager.RTC_WAKEUP,
+                firstTriggerMillis,
+                intervalMillis,
+                pendingIntent
+            )
+        }
     }
 
     private fun cancel(context: Context, requestCode: Int) {

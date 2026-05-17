@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="bottom_nav_active">#4EDBC3</color>
-    <color name="bottom_nav_inactive">#7EA6A0</color>
-    <color name="brand_on_primary">#00382F</color>
-    <color name="brand_primary">#4EDBC3</color>
-    <color name="brand_secondary">#75F3DE</color>
-    <color name="card_stroke">#2A3A38</color>
-    <color name="surface_background">#0F1716</color>
-    <color name="surface_card">#152120</color>
-    <color name="task_done">#7BE083</color>
-    <color name="task_pending">#FFA15C</color>
-    <color name="text_primary">#E7F5F2</color>
-    <color name="text_secondary">#A9C3BF</color>
+    <color name="bottom_nav_active">#1A237E</color>
+    <color name="bottom_nav_inactive">#757575</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_primary">#1A237E</color>
+    <color name="brand_secondary">#283593</color>
+    <color name="card_stroke">#2C2C2C</color>
+    <color name="surface_background">#000000</color>
+    <color name="surface_card">#121212</color>
+    <color name="task_done">#388E3C</color>
+    <color name="task_pending">#F57C00</color>
+    <color name="text_primary">#E0E0E0</color>
+    <color name="text_secondary">#9E9E9E</color>
     <style name="Theme.RMMCStudentTaskHub" parent="Theme.Material3.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/brand_primary</item>

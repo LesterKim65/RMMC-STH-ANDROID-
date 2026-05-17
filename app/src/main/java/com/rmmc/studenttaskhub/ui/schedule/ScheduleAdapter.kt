@@ -10,8 +10,8 @@ import com.rmmc.studenttaskhub.databinding.ItemScheduleBinding
 import com.rmmc.studenttaskhub.ui.common.DateTimeUtils
 
 class ScheduleAdapter(
-    private val onEdit: (Schedule) -> Unit,
-    private val onDelete: (Schedule) -> Unit
+    private val onEdit: ((Schedule) -> Unit)? = null,
+    private val onDelete: ((Schedule) -> Unit)? = null
 ) : ListAdapter<Schedule, ScheduleAdapter.ScheduleViewHolder>(Diff) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ScheduleViewHolder {
@@ -46,8 +46,19 @@ class ScheduleAdapter(
             val colorRes = colors[item.id % colors.size]
             binding.scheduleColorBar.setBackgroundColor(binding.root.context.getColor(colorRes))
 
-            binding.editScheduleButton.setOnClickListener { onEdit(item) }
-            binding.deleteScheduleButton.setOnClickListener { onDelete(item) }
+            if (onEdit == null) {
+                binding.editScheduleButton.visibility = android.view.View.GONE
+            } else {
+                binding.editScheduleButton.visibility = android.view.View.VISIBLE
+                binding.editScheduleButton.setOnClickListener { onEdit.invoke(item) }
+            }
+
+            if (onDelete == null) {
+                binding.deleteScheduleButton.visibility = android.view.View.GONE
+            } else {
+                binding.deleteScheduleButton.visibility = android.view.View.VISIBLE
+                binding.deleteScheduleButton.setOnClickListener { onDelete.invoke(item) }
+            }
         }
     }
 

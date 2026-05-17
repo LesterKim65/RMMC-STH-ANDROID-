@@ -43,6 +43,13 @@
         <activity
             android:name="com.rmmc.studenttaskhub.ui.MainActivity"
             android:exported="false" />
+        <activity
+            android:name="com.rmmc.studenttaskhub.ui.AlarmActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:theme="@style/Theme.RMMCStudentTaskHub.NoActionBar" />
 
         <receiver
             android:name="com.rmmc.studenttaskhub.notifications.ReminderReceiver"

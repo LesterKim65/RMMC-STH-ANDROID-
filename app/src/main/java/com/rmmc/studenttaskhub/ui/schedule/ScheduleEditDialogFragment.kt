@@ -1,8 +1,11 @@
 package com.rmmc.studenttaskhub.ui.schedule
 
 import android.app.Dialog
+import android.media.RingtoneManager
+import android.net.Uri
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
@@ -18,6 +21,18 @@ import java.util.Calendar
 class ScheduleEditDialogFragment : DialogFragment() {
     private var _binding: DialogScheduleEditBinding? = null
     private val binding get() = _binding!!
+
+    private var selectedSoundUri: String? = null
+
+    private val ringtonePickerLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == android.app.Activity.RESULT_OK) {
+            val uri = result.data?.getParcelableExtra<Uri>(RingtoneManager.EXTRA_RINGTONE_PICKED_URI)
+            selectedSoundUri = uri?.toString()
+            updateSoundInput(uri)
+        }
+    }
 
     private val existing: Schedule? by lazy {
         arguments?.getParcelable(ARG_SCHEDULE)
@@ -39,6 +54,8 @@ class ScheduleEditDialogFragment : DialogFragment() {
             binding.roomInput.setText(it.room)
             binding.dayDropdown.setText(it.day.name, false)
             binding.frequencyDropdown.setText(it.alarmFrequency.name, false)
+            selectedSoundUri = it.alarmSound
+            updateSoundInput(it.alarmSound?.let { uri -> Uri.parse(uri) })
         }
 
         binding.startTimeInput.setText(DateTimeUtils.formatTime(startCalendar.timeInMillis))
@@ -75,6 +92,17 @@ class ScheduleEditDialogFragment : DialogFragment() {
             }
         }
 
+        binding.soundInput.setOnClickListener {
+            val intent = android.content.Intent(RingtoneManager.ACTION_RINGTONE_PICKER).apply {
+                putExtra(RingtoneManager.EXTRA_RINGTONE_TYPE, RingtoneManager.TYPE_ALARM)
+                putExtra(RingtoneManager.EXTRA_RINGTONE_TITLE, getString(R.string.select_sound))
+                putExtra(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI, selectedSoundUri?.let { Uri.parse(it) })
+                putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_DEFAULT, true)
+                putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_SILENT, true)
+            }
+            ringtonePickerLauncher.launch(intent)
+        }
+
         return AlertDialog.Builder(requireContext())
             .setTitle(if (existing == null) R.string.add_schedule else R.string.edit_schedule)
             .setView(binding.root)
@@ -108,7 +136,8 @@ class ScheduleEditDialogFragment : DialogFragment() {
                     startTimeMillis = nextStart,
                     endTimeMillis = nextEnd,
                     classStartReminderMillis = classStartReminderMillis,
-                    alarmFrequency = frequency
+                    alarmFrequency = frequency,
+                    alarmSound = selectedSoundUri
                 )
 
                 parentFragmentManager.setFragmentResult(
@@ -135,6 +164,16 @@ class ScheduleEditDialogFragment : DialogFragment() {
             onTimeSelected(calendar.timeInMillis)
         }
         picker.show(childFragmentManager, "time_picker")
+    }
+
+    private fun updateSoundInput(uri: Uri?) {
+        val soundName = if (uri != null) {
+            RingtoneManager.getRingtone(requireContext(), uri)?.getTitle(requireContext())
+                ?: getString(R.string.alarm_sound)
+        } else {
+            getString(R.string.default_sound)
+        }
+        binding.soundInput.setText(soundName)
     }
 
     override fun onDestroyView() {
