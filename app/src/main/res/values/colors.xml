@@ -16,4 +16,11 @@
 
     <color name="bottom_nav_active">#00695C</color>
     <color name="bottom_nav_inactive">#73928C</color>
+
+    <color name="sch_color_1">#4285F4</color>
+    <color name="sch_color_2">#EA4335</color>
+    <color name="sch_color_3">#FBBC05</color>
+    <color name="sch_color_4">#34A853</color>
+    <color name="sch_color_5">#8E24AA</color>
+    <color name="sch_color_6">#00ACC1</color>
 </resources>

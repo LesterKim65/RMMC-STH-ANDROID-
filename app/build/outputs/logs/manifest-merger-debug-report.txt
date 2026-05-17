@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [androidx.databinding:viewbinding:8.6.0] C:\Users\CARL\.gradle\caches\9.0-milestone-1\transforms\30fb933cfafa998c878bd929266bf542\transformed\viewbinding-8.6.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\CARL\.gradle\caches\9.0-milestone-1\transforms\cc8487bf8c2603c0c5d856f42ff96c1d\transformed\material-1.14.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\CARL\.gradle\caches\9.0-milestone-1\transforms\844955b5f39b630e58936b90af1e76d1\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -106,8 +106,8 @@ ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:8:5-38:19
-INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:8:5-38:19
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:8:5-43:19
+INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:8:5-43:19
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\CARL\.gradle\caches\9.0-milestone-1\transforms\cc8487bf8c2603c0c5d856f42ff96c1d\transformed\material-1.14.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\CARL\.gradle\caches\9.0-milestone-1\transforms\cc8487bf8c2603c0c5d856f42ff96c1d\transformed\material-1.14.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\CARL\.gradle\caches\9.0-milestone-1\transforms\9a38c0f1eda7e6e4a65ad447068cb927\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -139,51 +139,59 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\CA
 	android:label
 		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:13:9-47
 	android:icon
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:11:9-49
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:11:9-42
 	android:allowBackup
 		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:15:9-56
 	android:name
 		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:9:9-42
-activity#com.rmmc.studenttaskhub.ui.MainActivity
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:17:9-24:20
+activity#com.rmmc.studenttaskhub.ui.SplashActivity
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:17:9-25:20
 	android:exported
 		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:19:13-36
+	android:theme
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:20:13-72
 	android:name
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:18:13-44
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:18:13-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:20:13-23:29
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:23:27-74
+activity#com.rmmc.studenttaskhub.ui.MainActivity
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:27:9-29:40
+	android:exported
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:28:13-44
 receiver#com.rmmc.studenttaskhub.notifications.ReminderReceiver
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:26:9-28:40
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:31:9-33:40
 	android:exported
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:27:13-59
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:32:13-59
 receiver#com.rmmc.studenttaskhub.notifications.BootReceiver
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:30:9-37:20
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:35:9-42:20
 	android:enabled
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:32:13-35
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:33:13-36
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:31:13-55
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:36:13-55
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:34:13-36:29
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:39:13-41:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:35:17-79
+ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:40:17-79
 	android:name
-		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:35:25-76
+		ADDED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml:40:25-76
 uses-sdk
 INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\CARL\StudioProjects\RMMC-STH-ANDROID-\app\src\main\AndroidManifest.xml

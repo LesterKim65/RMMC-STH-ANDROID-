@@ -29,18 +29,18 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FragmentContainerView fragmentContainer;
 
   @NonNull
-  public final ImageButton themeToggleButton;
+  public final ImageButton settingsButton;
 
   @NonNull
   public final MaterialToolbar toolbar;
 
   private ActivityMainBinding(@NonNull LinearLayout rootView,
       @NonNull BottomNavigationView bottomNav, @NonNull FragmentContainerView fragmentContainer,
-      @NonNull ImageButton themeToggleButton, @NonNull MaterialToolbar toolbar) {
+      @NonNull ImageButton settingsButton, @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
     this.fragmentContainer = fragmentContainer;
-    this.themeToggleButton = themeToggleButton;
+    this.settingsButton = settingsButton;
     this.toolbar = toolbar;
   }
 
@@ -83,9 +83,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.themeToggleButton;
-      ImageButton themeToggleButton = ViewBindings.findChildViewById(rootView, id);
-      if (themeToggleButton == null) {
+      id = R.id.settingsButton;
+      ImageButton settingsButton = ViewBindings.findChildViewById(rootView, id);
+      if (settingsButton == null) {
         break missingId;
       }
 
@@ -96,7 +96,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((LinearLayout) rootView, bottomNav, fragmentContainer,
-          themeToggleButton, toolbar);
+          settingsButton, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

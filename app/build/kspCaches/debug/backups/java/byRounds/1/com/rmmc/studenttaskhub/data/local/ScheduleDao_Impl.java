@@ -13,6 +13,7 @@ import androidx.room.RoomSQLiteQuery;
 import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
+import com.rmmc.studenttaskhub.data.model.AlarmFrequency;
 import com.rmmc.studenttaskhub.data.model.Schedule;
 import com.rmmc.studenttaskhub.data.model.WeekDay;
 import java.lang.Class;
@@ -49,7 +50,7 @@ public final class ScheduleDao_Impl implements ScheduleDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "INSERT OR REPLACE INTO `schedules` (`id`,`subject`,`instructor`,`room`,`day`,`startTimeMillis`,`endTimeMillis`,`classStartReminderMillis`) VALUES (nullif(?, 0),?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `schedules` (`id`,`subject`,`instructor`,`room`,`day`,`startTimeMillis`,`endTimeMillis`,`classStartReminderMillis`,`alarmFrequency`,`alarmSound`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -67,6 +68,13 @@ public final class ScheduleDao_Impl implements ScheduleDao {
           statement.bindNull(8);
         } else {
           statement.bindLong(8, entity.getClassStartReminderMillis());
+        }
+        final String _tmp_1 = __converters.fromAlarmFrequency(entity.getAlarmFrequency());
+        statement.bindString(9, _tmp_1);
+        if (entity.getAlarmSound() == null) {
+          statement.bindNull(10);
+        } else {
+          statement.bindString(10, entity.getAlarmSound());
         }
       }
     };
@@ -87,7 +95,7 @@ public final class ScheduleDao_Impl implements ScheduleDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "UPDATE OR ABORT `schedules` SET `id` = ?,`subject` = ?,`instructor` = ?,`room` = ?,`day` = ?,`startTimeMillis` = ?,`endTimeMillis` = ?,`classStartReminderMillis` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `schedules` SET `id` = ?,`subject` = ?,`instructor` = ?,`room` = ?,`day` = ?,`startTimeMillis` = ?,`endTimeMillis` = ?,`classStartReminderMillis` = ?,`alarmFrequency` = ?,`alarmSound` = ? WHERE `id` = ?";
       }
 
       @Override
@@ -106,7 +114,14 @@ public final class ScheduleDao_Impl implements ScheduleDao {
         } else {
           statement.bindLong(8, entity.getClassStartReminderMillis());
         }
-        statement.bindLong(9, entity.getId());
+        final String _tmp_1 = __converters.fromAlarmFrequency(entity.getAlarmFrequency());
+        statement.bindString(9, _tmp_1);
+        if (entity.getAlarmSound() == null) {
+          statement.bindNull(10);
+        } else {
+          statement.bindString(10, entity.getAlarmSound());
+        }
+        statement.bindLong(11, entity.getId());
       }
     };
   }
@@ -186,6 +201,8 @@ public final class ScheduleDao_Impl implements ScheduleDao {
           final int _cursorIndexOfStartTimeMillis = CursorUtil.getColumnIndexOrThrow(_cursor, "startTimeMillis");
           final int _cursorIndexOfEndTimeMillis = CursorUtil.getColumnIndexOrThrow(_cursor, "endTimeMillis");
           final int _cursorIndexOfClassStartReminderMillis = CursorUtil.getColumnIndexOrThrow(_cursor, "classStartReminderMillis");
+          final int _cursorIndexOfAlarmFrequency = CursorUtil.getColumnIndexOrThrow(_cursor, "alarmFrequency");
+          final int _cursorIndexOfAlarmSound = CursorUtil.getColumnIndexOrThrow(_cursor, "alarmSound");
           final List<Schedule> _result = new ArrayList<Schedule>(_cursor.getCount());
           while (_cursor.moveToNext()) {
             final Schedule _item;
@@ -211,7 +228,17 @@ public final class ScheduleDao_Impl implements ScheduleDao {
             } else {
               _tmpClassStartReminderMillis = _cursor.getLong(_cursorIndexOfClassStartReminderMillis);
             }
-            _item = new Schedule(_tmpId,_tmpSubject,_tmpInstructor,_tmpRoom,_tmpDay,_tmpStartTimeMillis,_tmpEndTimeMillis,_tmpClassStartReminderMillis);
+            final AlarmFrequency _tmpAlarmFrequency;
+            final String _tmp_1;
+            _tmp_1 = _cursor.getString(_cursorIndexOfAlarmFrequency);
+            _tmpAlarmFrequency = __converters.toAlarmFrequency(_tmp_1);
+            final String _tmpAlarmSound;
+            if (_cursor.isNull(_cursorIndexOfAlarmSound)) {
+              _tmpAlarmSound = null;
+            } else {
+              _tmpAlarmSound = _cursor.getString(_cursorIndexOfAlarmSound);
+            }
+            _item = new Schedule(_tmpId,_tmpSubject,_tmpInstructor,_tmpRoom,_tmpDay,_tmpStartTimeMillis,_tmpEndTimeMillis,_tmpClassStartReminderMillis,_tmpAlarmFrequency,_tmpAlarmSound);
             _result.add(_item);
           }
           return _result;
@@ -246,6 +273,8 @@ public final class ScheduleDao_Impl implements ScheduleDao {
           final int _cursorIndexOfStartTimeMillis = CursorUtil.getColumnIndexOrThrow(_cursor, "startTimeMillis");
           final int _cursorIndexOfEndTimeMillis = CursorUtil.getColumnIndexOrThrow(_cursor, "endTimeMillis");
           final int _cursorIndexOfClassStartReminderMillis = CursorUtil.getColumnIndexOrThrow(_cursor, "classStartReminderMillis");
+          final int _cursorIndexOfAlarmFrequency = CursorUtil.getColumnIndexOrThrow(_cursor, "alarmFrequency");
+          final int _cursorIndexOfAlarmSound = CursorUtil.getColumnIndexOrThrow(_cursor, "alarmSound");
           final List<Schedule> _result = new ArrayList<Schedule>(_cursor.getCount());
           while (_cursor.moveToNext()) {
             final Schedule _item;
@@ -271,7 +300,17 @@ public final class ScheduleDao_Impl implements ScheduleDao {
             } else {
               _tmpClassStartReminderMillis = _cursor.getLong(_cursorIndexOfClassStartReminderMillis);
             }
-            _item = new Schedule(_tmpId,_tmpSubject,_tmpInstructor,_tmpRoom,_tmpDay,_tmpStartTimeMillis,_tmpEndTimeMillis,_tmpClassStartReminderMillis);
+            final AlarmFrequency _tmpAlarmFrequency;
+            final String _tmp_1;
+            _tmp_1 = _cursor.getString(_cursorIndexOfAlarmFrequency);
+            _tmpAlarmFrequency = __converters.toAlarmFrequency(_tmp_1);
+            final String _tmpAlarmSound;
+            if (_cursor.isNull(_cursorIndexOfAlarmSound)) {
+              _tmpAlarmSound = null;
+            } else {
+              _tmpAlarmSound = _cursor.getString(_cursorIndexOfAlarmSound);
+            }
+            _item = new Schedule(_tmpId,_tmpSubject,_tmpInstructor,_tmpRoom,_tmpDay,_tmpStartTimeMillis,_tmpEndTimeMillis,_tmpClassStartReminderMillis,_tmpAlarmFrequency,_tmpAlarmSound);
             _result.add(_item);
           }
           return _result;

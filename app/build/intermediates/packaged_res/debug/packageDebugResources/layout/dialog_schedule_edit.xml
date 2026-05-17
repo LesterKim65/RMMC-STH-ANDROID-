@@ -63,6 +63,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
+            android:hint="Alarm Frequency"
+            app:endIconMode="dropdown_menu">
+
+            <AutoCompleteTextView
+                android:id="@+id/frequencyDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
             android:hint="@string/start_time">
 
             <com.google.android.material.textfield.TextInputEditText

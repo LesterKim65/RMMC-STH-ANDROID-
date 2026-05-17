@@ -9,6 +9,10 @@ enum class WeekDay {
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
 }
 
+enum class AlarmFrequency {
+    ONCE, DAILY, WEEKLY
+}
+
 @Entity(tableName = "schedules")
 @Parcelize
 data class Schedule(
@@ -19,5 +23,7 @@ data class Schedule(
     val day: WeekDay,
     val startTimeMillis: Long,
     val endTimeMillis: Long,
-    val classStartReminderMillis: Long? = null
+    val classStartReminderMillis: Long? = null,
+    val alarmFrequency: AlarmFrequency = AlarmFrequency.WEEKLY,
+    val alarmSound: String? = null
 ) : Parcelable

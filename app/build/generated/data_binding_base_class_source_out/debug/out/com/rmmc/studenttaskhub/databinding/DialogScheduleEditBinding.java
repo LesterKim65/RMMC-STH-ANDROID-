@@ -27,6 +27,9 @@ public final class DialogScheduleEditBinding implements ViewBinding {
   public final TextInputEditText endTimeInput;
 
   @NonNull
+  public final AutoCompleteTextView frequencyDropdown;
+
+  @NonNull
   public final TextInputEditText instructorInput;
 
   @NonNull
@@ -40,11 +43,13 @@ public final class DialogScheduleEditBinding implements ViewBinding {
 
   private DialogScheduleEditBinding(@NonNull ScrollView rootView,
       @NonNull AutoCompleteTextView dayDropdown, @NonNull TextInputEditText endTimeInput,
-      @NonNull TextInputEditText instructorInput, @NonNull TextInputEditText roomInput,
-      @NonNull TextInputEditText startTimeInput, @NonNull TextInputEditText subjectInput) {
+      @NonNull AutoCompleteTextView frequencyDropdown, @NonNull TextInputEditText instructorInput,
+      @NonNull TextInputEditText roomInput, @NonNull TextInputEditText startTimeInput,
+      @NonNull TextInputEditText subjectInput) {
     this.rootView = rootView;
     this.dayDropdown = dayDropdown;
     this.endTimeInput = endTimeInput;
+    this.frequencyDropdown = frequencyDropdown;
     this.instructorInput = instructorInput;
     this.roomInput = roomInput;
     this.startTimeInput = startTimeInput;
@@ -90,6 +95,12 @@ public final class DialogScheduleEditBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.frequencyDropdown;
+      AutoCompleteTextView frequencyDropdown = ViewBindings.findChildViewById(rootView, id);
+      if (frequencyDropdown == null) {
+        break missingId;
+      }
+
       id = R.id.instructorInput;
       TextInputEditText instructorInput = ViewBindings.findChildViewById(rootView, id);
       if (instructorInput == null) {
@@ -115,7 +126,7 @@ public final class DialogScheduleEditBinding implements ViewBinding {
       }
 
       return new DialogScheduleEditBinding((ScrollView) rootView, dayDropdown, endTimeInput,
-          instructorInput, roomInput, startTimeInput, subjectInput);
+          frequencyDropdown, instructorInput, roomInput, startTimeInput, subjectInput);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

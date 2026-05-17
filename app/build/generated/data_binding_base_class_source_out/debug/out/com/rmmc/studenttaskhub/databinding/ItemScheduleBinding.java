@@ -27,6 +27,9 @@ public final class ItemScheduleBinding implements ViewBinding {
   public final ImageButton editScheduleButton;
 
   @NonNull
+  public final View scheduleColorBar;
+
+  @NonNull
   public final TextView scheduleDay;
 
   @NonNull
@@ -43,12 +46,13 @@ public final class ItemScheduleBinding implements ViewBinding {
 
   private ItemScheduleBinding(@NonNull MaterialCardView rootView,
       @NonNull ImageButton deleteScheduleButton, @NonNull ImageButton editScheduleButton,
-      @NonNull TextView scheduleDay, @NonNull TextView scheduleInstructor,
-      @NonNull TextView scheduleRoom, @NonNull TextView scheduleSubject,
-      @NonNull TextView scheduleTime) {
+      @NonNull View scheduleColorBar, @NonNull TextView scheduleDay,
+      @NonNull TextView scheduleInstructor, @NonNull TextView scheduleRoom,
+      @NonNull TextView scheduleSubject, @NonNull TextView scheduleTime) {
     this.rootView = rootView;
     this.deleteScheduleButton = deleteScheduleButton;
     this.editScheduleButton = editScheduleButton;
+    this.scheduleColorBar = scheduleColorBar;
     this.scheduleDay = scheduleDay;
     this.scheduleInstructor = scheduleInstructor;
     this.scheduleRoom = scheduleRoom;
@@ -95,6 +99,12 @@ public final class ItemScheduleBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scheduleColorBar;
+      View scheduleColorBar = ViewBindings.findChildViewById(rootView, id);
+      if (scheduleColorBar == null) {
+        break missingId;
+      }
+
       id = R.id.scheduleDay;
       TextView scheduleDay = ViewBindings.findChildViewById(rootView, id);
       if (scheduleDay == null) {
@@ -126,8 +136,8 @@ public final class ItemScheduleBinding implements ViewBinding {
       }
 
       return new ItemScheduleBinding((MaterialCardView) rootView, deleteScheduleButton,
-          editScheduleButton, scheduleDay, scheduleInstructor, scheduleRoom, scheduleSubject,
-          scheduleTime);
+          editScheduleButton, scheduleColorBar, scheduleDay, scheduleInstructor, scheduleRoom,
+          scheduleSubject, scheduleTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

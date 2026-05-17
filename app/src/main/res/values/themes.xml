@@ -23,4 +23,9 @@
 
         <item name="materialCardViewStyle">@style/Widget.Material3.CardView.Elevated</item>
     </style>
+
+    <style name="Theme.RMMCStudentTaskHub.NoActionBar" parent="Theme.RMMCStudentTaskHub">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>

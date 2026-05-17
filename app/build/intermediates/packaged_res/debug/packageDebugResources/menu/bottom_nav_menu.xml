@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/home" />
+
+    <item
         android:id="@+id/scheduleFragment"
         android:icon="@drawable/ic_schedule"
         android:title="@string/schedules" />
@@ -9,4 +14,9 @@
         android:id="@+id/tasksFragment"
         android:icon="@drawable/ic_task"
         android:title="@string/tasks" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/settings" />
 </menu>

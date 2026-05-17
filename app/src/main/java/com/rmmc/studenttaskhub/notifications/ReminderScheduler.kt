@@ -5,12 +5,14 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import com.rmmc.studenttaskhub.data.model.AlarmFrequency
 import com.rmmc.studenttaskhub.data.model.Schedule
 import com.rmmc.studenttaskhub.data.model.Task
 
 object ReminderScheduler {
     private const val TYPE_TASK = "TASK"
     private const val TYPE_CLASS = "CLASS"
+    private const val DAY_MILLIS = 24L * 60 * 60 * 1000
     private const val WEEK_MILLIS = 7L * 24 * 60 * 60 * 1000
 
     fun scheduleTaskReminder(context: Context, task: Task) {
@@ -32,25 +34,50 @@ object ReminderScheduler {
 
     fun scheduleClassReminder(context: Context, schedule: Schedule) {
         val triggerMillis = schedule.classStartReminderMillis ?: return
-        val firstTrigger = if (triggerMillis <= System.currentTimeMillis()) {
-            triggerMillis + WEEK_MILLIS
-        } else {
-            triggerMillis
+        
+        val intervalMillis = when (schedule.alarmFrequency) {
+            AlarmFrequency.ONCE -> 0L
+            AlarmFrequency.DAILY -> DAY_MILLIS
+            AlarmFrequency.WEEKLY -> WEEK_MILLIS
         }
-        scheduleRepeating(
-            context = context,
-            requestCode = 20_000 + schedule.id,
-            firstTriggerMillis = firstTrigger,
-            intervalMillis = WEEK_MILLIS,
-            title = context.getString(com.rmmc.studenttaskhub.R.string.class_reminder_title),
-            message = context.getString(
-                com.rmmc.studenttaskhub.R.string.class_reminder_message,
-                schedule.subject,
-                schedule.room
-            ),
-            type = TYPE_CLASS,
-            entityId = schedule.id
-        )
+
+        if (intervalMillis == 0L) {
+            if (triggerMillis > System.currentTimeMillis()) {
+                schedule(
+                    context = context,
+                    requestCode = 20_000 + schedule.id,
+                    triggerMillis = triggerMillis,
+                    title = context.getString(com.rmmc.studenttaskhub.R.string.class_reminder_title),
+                    message = context.getString(
+                        com.rmmc.studenttaskhub.R.string.class_reminder_message,
+                        schedule.subject,
+                        schedule.room
+                    ),
+                    type = TYPE_CLASS,
+                    entityId = schedule.id
+                )
+            }
+        } else {
+            val firstTrigger = if (triggerMillis <= System.currentTimeMillis()) {
+                triggerMillis + intervalMillis
+            } else {
+                triggerMillis
+            }
+            scheduleRepeating(
+                context = context,
+                requestCode = 20_000 + schedule.id,
+                firstTriggerMillis = firstTrigger,
+                intervalMillis = intervalMillis,
+                title = context.getString(com.rmmc.studenttaskhub.R.string.class_reminder_title),
+                message = context.getString(
+                    com.rmmc.studenttaskhub.R.string.class_reminder_message,
+                    schedule.subject,
+                    schedule.room
+                ),
+                type = TYPE_CLASS,
+                entityId = schedule.id
+            )
+        }
     }
 
     fun cancelTaskReminder(context: Context, taskId: Int) {

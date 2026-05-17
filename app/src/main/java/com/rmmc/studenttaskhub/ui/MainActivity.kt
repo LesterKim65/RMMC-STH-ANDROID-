@@ -17,7 +17,9 @@ import androidx.fragment.app.Fragment
 import com.rmmc.studenttaskhub.R
 import com.rmmc.studenttaskhub.databinding.ActivityMainBinding
 import com.rmmc.studenttaskhub.notifications.NotificationHelper
+import com.rmmc.studenttaskhub.ui.dashboard.DashboardFragment
 import com.rmmc.studenttaskhub.ui.schedule.ScheduleFragment
+import com.rmmc.studenttaskhub.ui.settings.SettingsFragment
 import com.rmmc.studenttaskhub.ui.tasks.TaskListFragment
 
 class MainActivity : AppCompatActivity() {
@@ -34,39 +36,27 @@ class MainActivity : AppCompatActivity() {
         NotificationHelper.createChannel(this)
 
         if (savedInstanceState == null) {
-            showFragment(ScheduleFragment())
+            showFragment(DashboardFragment())
         }
 
         binding.bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
+                R.id.dashboardFragment -> showFragment(DashboardFragment())
                 R.id.scheduleFragment -> showFragment(ScheduleFragment())
                 R.id.tasksFragment -> showFragment(TaskListFragment())
+                R.id.settingsFragment -> showFragment(SettingsFragment())
                 else -> false
             }
         }
 
-        binding.bottomNav.selectedItemId = R.id.scheduleFragment
+        binding.bottomNav.selectedItemId = R.id.dashboardFragment
 
-        updateThemeIcon()
-        binding.themeToggleButton.setOnClickListener {
-            toggleTheme()
+        binding.settingsButton.setOnClickListener {
+            binding.bottomNav.selectedItemId = R.id.settingsFragment
         }
 
         ensureNotificationPermission()
         ensureExactAlarmPermission()
-    }
-
-    private fun updateThemeIcon() {
-        val currentMode = AppCompatDelegate.getDefaultNightMode()
-        val isDarkMode = if (currentMode == AppCompatDelegate.MODE_NIGHT_UNSPECIFIED || currentMode == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM) {
-            (resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK) == android.content.res.Configuration.UI_MODE_NIGHT_YES
-        } else {
-            currentMode == AppCompatDelegate.MODE_NIGHT_YES
-        }
-        
-        binding.themeToggleButton.setImageResource(
-            if (isDarkMode) R.drawable.ic_light_mode else R.drawable.ic_dark_mode
-        )
     }
 
     private fun loadThemePreference() {
@@ -77,22 +67,6 @@ class MainActivity : AppCompatActivity() {
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
-    }
-
-    private fun toggleTheme() {
-        val sharedPref = getSharedPreferences("settings", MODE_PRIVATE)
-        val isDarkMode = sharedPref.getBoolean("dark_mode", false)
-        val editor = sharedPref.edit()
-        
-        if (isDarkMode) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            editor.putBoolean("dark_mode", false)
-        } else {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            editor.putBoolean("dark_mode", true)
-        }
-        editor.apply()
-        // Activity will recreate automatically
     }
 
     private fun ensureExactAlarmPermission() {

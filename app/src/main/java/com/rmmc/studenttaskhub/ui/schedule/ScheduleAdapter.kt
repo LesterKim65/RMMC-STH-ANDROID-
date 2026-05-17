@@ -35,6 +35,17 @@ class ScheduleAdapter(
                 DateTimeUtils.formatTime(item.endTimeMillis)
             )
 
+            val colors = listOf(
+                com.rmmc.studenttaskhub.R.color.sch_color_1,
+                com.rmmc.studenttaskhub.R.color.sch_color_2,
+                com.rmmc.studenttaskhub.R.color.sch_color_3,
+                com.rmmc.studenttaskhub.R.color.sch_color_4,
+                com.rmmc.studenttaskhub.R.color.sch_color_5,
+                com.rmmc.studenttaskhub.R.color.sch_color_6
+            )
+            val colorRes = colors[item.id % colors.size]
+            binding.scheduleColorBar.setBackgroundColor(binding.root.context.getColor(colorRes))
+
             binding.editScheduleButton.setOnClickListener { onEdit(item) }
             binding.deleteScheduleButton.setOnClickListener { onDelete(item) }
         }

@@ -7,13 +7,15 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.rmmc.studenttaskhub.data.model.Schedule
 import com.rmmc.studenttaskhub.data.model.Task
+import com.rmmc.studenttaskhub.data.model.TaskSchedule
 
-@Database(entities = [Task::class, Schedule::class], version = 1, exportSchema = false)
+@Database(entities = [Task::class, Schedule::class, TaskSchedule::class], version = 3, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun taskDao(): TaskDao
     abstract fun scheduleDao(): ScheduleDao
+    abstract fun taskScheduleDao(): TaskScheduleDao
 
     companion object {
         @Volatile
@@ -25,7 +27,9 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "student_task_hub_db"
-                ).build()
+                )
+                    .fallbackToDestructiveMigration()
+                    .build()
                 INSTANCE = instance
                 instance
             }

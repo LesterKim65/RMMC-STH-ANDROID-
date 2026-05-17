@@ -1,15 +1,18 @@
 package com.rmmc.studenttaskhub.ui.schedule
 
 import android.app.Dialog
-import android.app.TimePickerDialog
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import androidx.appcompat.app.AlertDialog
 import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
+import com.google.android.material.timepicker.MaterialTimePicker
+import com.google.android.material.timepicker.TimeFormat
 import com.rmmc.studenttaskhub.R
 import com.rmmc.studenttaskhub.data.model.Schedule
 import com.rmmc.studenttaskhub.data.model.WeekDay
 import com.rmmc.studenttaskhub.databinding.DialogScheduleEditBinding
+import com.rmmc.studenttaskhub.ui.common.DateTimeUtils
 import java.util.Calendar
 
 class ScheduleEditDialogFragment : DialogFragment() {
@@ -35,52 +38,41 @@ class ScheduleEditDialogFragment : DialogFragment() {
             binding.instructorInput.setText(it.instructor)
             binding.roomInput.setText(it.room)
             binding.dayDropdown.setText(it.day.name, false)
+            binding.frequencyDropdown.setText(it.alarmFrequency.name, false)
         }
 
-        binding.startTimeInput.setText(com.rmmc.studenttaskhub.ui.common.DateTimeUtils.formatTime(startCalendar.timeInMillis))
-        binding.endTimeInput.setText(com.rmmc.studenttaskhub.ui.common.DateTimeUtils.formatTime(endCalendar.timeInMillis))
+        binding.startTimeInput.setText(DateTimeUtils.formatTime(startCalendar.timeInMillis))
+        binding.endTimeInput.setText(DateTimeUtils.formatTime(endCalendar.timeInMillis))
 
-        val daysAdapter = android.widget.ArrayAdapter(
+        val daysAdapter = ArrayAdapter(
             requireContext(),
             android.R.layout.simple_list_item_1,
             WeekDay.entries.map { it.name }
         )
         binding.dayDropdown.setAdapter(daysAdapter)
 
+        val freqAdapter = ArrayAdapter(
+            requireContext(),
+            android.R.layout.simple_list_item_1,
+            com.rmmc.studenttaskhub.data.model.AlarmFrequency.entries.map { it.name }
+        )
+        binding.frequencyDropdown.setAdapter(freqAdapter)
+
         if (existing == null) {
             binding.dayDropdown.setText(WeekDay.MONDAY.name, false)
+            binding.frequencyDropdown.setText(com.rmmc.studenttaskhub.data.model.AlarmFrequency.WEEKLY.name, false)
         }
 
         binding.startTimeInput.setOnClickListener {
-            TimePickerDialog(
-                requireContext(),
-                { _, hour, minute ->
-                    startCalendar.set(Calendar.HOUR_OF_DAY, hour)
-                    startCalendar.set(Calendar.MINUTE, minute)
-                    binding.startTimeInput.setText(
-                        com.rmmc.studenttaskhub.ui.common.DateTimeUtils.formatTime(startCalendar.timeInMillis)
-                    )
-                },
-                startCalendar.get(Calendar.HOUR_OF_DAY),
-                startCalendar.get(Calendar.MINUTE),
-                false
-            ).show()
+            showTimePicker(startCalendar) {
+                binding.startTimeInput.setText(DateTimeUtils.formatTime(it))
+            }
         }
 
         binding.endTimeInput.setOnClickListener {
-            TimePickerDialog(
-                requireContext(),
-                { _, hour, minute ->
-                    endCalendar.set(Calendar.HOUR_OF_DAY, hour)
-                    endCalendar.set(Calendar.MINUTE, minute)
-                    binding.endTimeInput.setText(
-                        com.rmmc.studenttaskhub.ui.common.DateTimeUtils.formatTime(endCalendar.timeInMillis)
-                    )
-                },
-                endCalendar.get(Calendar.HOUR_OF_DAY),
-                endCalendar.get(Calendar.MINUTE),
-                false
-            ).show()
+            showTimePicker(endCalendar) {
+                binding.endTimeInput.setText(DateTimeUtils.formatTime(it))
+            }
         }
 
         return AlertDialog.Builder(requireContext())
@@ -93,6 +85,7 @@ class ScheduleEditDialogFragment : DialogFragment() {
                 if (subject.isEmpty()) return@setPositiveButton
 
                 val day = WeekDay.valueOf(binding.dayDropdown.text.toString())
+                val frequency = com.rmmc.studenttaskhub.data.model.AlarmFrequency.valueOf(binding.frequencyDropdown.text.toString())
                 val nextStart = nextOccurrence(
                     day = day,
                     hour = startCalendar.get(Calendar.HOUR_OF_DAY),
@@ -114,7 +107,8 @@ class ScheduleEditDialogFragment : DialogFragment() {
                     day = day,
                     startTimeMillis = nextStart,
                     endTimeMillis = nextEnd,
-                    classStartReminderMillis = classStartReminderMillis
+                    classStartReminderMillis = classStartReminderMillis,
+                    alarmFrequency = frequency
                 )
 
                 parentFragmentManager.setFragmentResult(
@@ -124,6 +118,23 @@ class ScheduleEditDialogFragment : DialogFragment() {
             }
             .setNegativeButton(R.string.cancel, null)
             .create()
+    }
+
+    private fun showTimePicker(calendar: Calendar, onTimeSelected: (Long) -> Unit) {
+        val picker = MaterialTimePicker.Builder()
+            .setTimeFormat(TimeFormat.CLOCK_12H)
+            .setHour(calendar.get(Calendar.HOUR_OF_DAY))
+            .setMinute(calendar.get(Calendar.MINUTE))
+            .setTitleText("Select Time")
+            .setInputMode(MaterialTimePicker.INPUT_MODE_KEYBOARD)
+            .build()
+
+        picker.addOnPositiveButtonClickListener {
+            calendar.set(Calendar.HOUR_OF_DAY, picker.hour)
+            calendar.set(Calendar.MINUTE, picker.minute)
+            onTimeSelected(calendar.timeInMillis)
+        }
+        picker.show(childFragmentManager, "time_picker")
     }
 
     override fun onDestroyView() {

@@ -1203,6 +1203,12 @@
     <color name="primary_text_disabled_material_light">#39000000</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
+    <color name="sch_color_1">#4285F4</color>
+    <color name="sch_color_2">#EA4335</color>
+    <color name="sch_color_3">#FBBC05</color>
+    <color name="sch_color_4">#34A853</color>
+    <color name="sch_color_5">#8E24AA</color>
+    <color name="sch_color_6">#00ACC1</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
@@ -2577,6 +2583,9 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="add_schedule">Add Schedule</string>
     <string name="add_task">Add Assignment</string>
+    <string name="alarm_frequency">Alarm Frequency</string>
+    <string name="alarm_settings">Alarm Settings</string>
+    <string name="alarm_volume">Alarm Volume</string>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name">RMMC Student Task Hub</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
@@ -2608,6 +2617,7 @@
     <string name="close_drawer">"Close navigation menu"</string>
     <string name="close_sheet">"Close sheet"</string>
     <string name="completed_tasks">Completed</string>
+    <string name="dark_mode">Dark Mode</string>
     <string name="dashboard">Dashboard</string>
     <string name="dashboard_subtitle">Your academic productivity at a glance</string>
     <string name="dashboard_title">Student Task Hub</string>
@@ -2622,6 +2632,7 @@
     <string name="edit">Edit</string>
     <string name="edit_schedule">Edit Schedule</string>
     <string name="edit_task">Edit Task</string>
+    <string name="enable_notifications">Enable Notifications</string>
     <string name="end_time">End Time</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
@@ -2634,11 +2645,13 @@
     <string name="filter_priority">Priority</string>
     <string name="filter_status">Status</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="home">Home</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="in_progress">In progress</string>
     <string name="indeterminate">Partially checked</string>
     <string name="instructor">Instructor</string>
     <string name="item_view_role_description">Tab</string>
+    <string name="light_mode">Light Mode</string>
     <string name="m3_exceed_max_badge_text_suffix" translatable="false"><ns2:g example="Some te" id="part of a long text">%1$s</ns2:g><ns2:g example="…" id="suffix">%2$s</ns2:g></string>
     <string description="Content description for a loading indicator [CHAR LIMIT=NONE]" name="m3_loading_indicator_content_description">
     Loading
@@ -2836,11 +2849,12 @@
     Expanded
   </string>
     <string name="navigation_menu">"Navigation menu"</string>
-    <string name="next_deadline">Next Deadline</string>
+    <string name="no_classes_today">No classes today</string>
     <string name="no_upcoming_tasks">No upcoming tasks</string>
     <string name="not_selected">Not selected</string>
     <string name="notification_channel_description">Reminder alerts for classes and deadlines</string>
     <string name="notification_channel_name">Task Hub Reminders</string>
+    <string name="notifications">Notifications</string>
     <string name="off">Off</string>
     <string name="on">On</string>
     <string name="password_toggle_content_description">Show password</string>
@@ -2864,6 +2878,7 @@
     <string description="Content description for the X button to clear text [CHAR_LIMIT=NONE]" name="searchview_clear_text_content_description">Clear text</string>
     <string description="Content description for the navigation button to return to the previous screen [CHAR_LIMIT=NONE]" name="searchview_navigation_content_description">Back</string>
     <string name="selected">Selected</string>
+    <string name="settings">Settings</string>
     <string description="Title of the side sheet&apos;s accessibility pane that is spoken by TalkBack when the side sheet appears on screen. [CHAR_LIMIT=NONE]" name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
     <string name="sort_by">Sort</string>
@@ -2879,12 +2894,16 @@
     <string name="task_title">Assignment Title</string>
     <string name="tasks">Assignments</string>
     <string name="template_percent"><ns2:g id="percentage">%1$d</ns2:g> percent.</string>
+    <string name="theme">Theme</string>
+    <string name="today_schedule">Today\'s Schedule</string>
     <string name="today_tasks">Today\'s Tasks</string>
     <string name="toggle_theme">Toggle light/dark mode</string>
     <string name="tooltip_description">tooltip</string>
     <string name="tooltip_label">show tooltip</string>
     <string name="total_tasks">Total Tasks</string>
+    <string name="upcoming_tasks">Upcoming Assignments</string>
     <string name="view_schedule">View Schedule</string>
+    <string name="welcome">Welcome</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -9856,6 +9875,10 @@
         <item name="android:navigationBarColor">@color/surface_card</item>
 
         <item name="materialCardViewStyle">@style/Widget.Material3.CardView.Elevated</item>
+    </style>
+    <style name="Theme.RMMCStudentTaskHub.NoActionBar" parent="Theme.RMMCStudentTaskHub">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
